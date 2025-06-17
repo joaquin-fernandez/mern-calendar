@@ -44,6 +44,7 @@ export const CalendarBig = () => {
                 startAccessor='start'
                 endAccessor='end'
                 style={{ height: 'calc(100vh - 80px)', padding: 10 }}
+                className='animate__animated animate__fadeIn'
                 components={{
                     event: CalendarEvent,
                 }}

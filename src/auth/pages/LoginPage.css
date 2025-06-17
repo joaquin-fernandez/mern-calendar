@@ -37,9 +37,15 @@
     color: #fff;
     background-color: #0062cc;
 }
+.login-form-1 .btnSubmit:hover{
+    box-shadow: 0 5px 8px 0 rgba(57, 84, 158, 0.2), 0 9px 26px 0 rgba(57, 84, 158, 0.2);
+}
 .login-form-2 .btnSubmit{
     background-color: #fff;
     color: #0062cc;
+}
+.login-form-2 .btnSubmit:hover{
+    box-shadow: 0 5px 8px 0 rgba(57, 84, 158, 0.2), 0 9px 26px 0 rgba(57, 84, 158, 0.2);
 }
 .login-form-2 .ForgetPwd{
     color: #fff;
@@ -50,4 +56,34 @@
     color: #0062cc;
     font-weight: 600;
     text-decoration: none;
+}
+
+.btnSignUp{
+    background-color: #fff;
+    color: #0062cc;
+    border: 1px solid #0062cc;
+    border-radius: 0.5rem;
+    padding: 1.5%;
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+}
+.btnSignUp:hover{
+    box-shadow: 0 5px 8px 0 rgba(57, 84, 158, 0.2), 0 9px 26px 0 rgba(57, 84, 158, 0.2);
+}
+
+.btnSignIn{
+    background-color: #0062cc;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+    padding: 1.5%;
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+}
+.btnSignIn:hover{
+    box-shadow: 0 5px 8px 0 rgba(57, 84, 158, 0.2), 0 9px 26px 0 rgba(57, 84, 158, 0.2);
 }
