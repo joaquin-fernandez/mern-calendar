@@ -4,7 +4,6 @@ import DatePicker, { registerLocale } from 'react-datepicker';
 import es from 'date-fns/locale/es';
 import {
     addHours,
-    addMinutes,
     addYears,
     differenceInSeconds,
     isSameDay,
@@ -15,6 +14,7 @@ import {
 
 import 'react-datepicker/dist/react-datepicker.css';
 import { useAlert, useCalendarStore, useUiStore } from '../../hooks';
+import { getEnvVariables } from '../../helpers';
 
 registerLocale('es', es);
 
@@ -29,7 +29,9 @@ const customStyles = {
     },
 };
 
-Modal.setAppElement('#root');
+if (getEnvVariables().VITE_MODE !== 'test') {
+    Modal.setAppElement('#root');
+}
 
 const initialForm = {
     title: '',
